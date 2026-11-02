@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "sources": [{
+    "id": "S1",
+    "title": "虚构示例：项目计划",
+    "url": "https://www.notion.so/0123456789abcdef0123456789abcdef",
+    "retrievedAt": "2026-11-02T12:00:00Z",
+    "partial": false,
+    "text": "这是本地合成测试资料，并非真实 Notion 页面。试点包含三个部门。试点结束后再决定是否扩大范围。"
+  }],
+  "evidence": [{
+    "id": "E1",
+    "sourceId": "S1",
+    "quote": "试点包含三个部门。",
+    "locator": "项目范围"
+  }]
+}

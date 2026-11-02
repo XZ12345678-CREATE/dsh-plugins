@@ -1,0 +1,33 @@
+{
+  "name": "dsh-workflow-suite",
+  "version": "0.1.0-preview.2",
+  "description": "Optional self-contained bundle of four DSH workflow plugins.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.5 <0.2.2-0"
+  },
+  "files": [
+    "index.js",
+    "bundled",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "suite"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

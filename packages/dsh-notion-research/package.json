@@ -1,0 +1,37 @@
+{
+  "name": "dsh-notion-research",
+  "version": "0.1.0-preview.2",
+  "description": "Notion-backed research with source excerpts and local citation consistency checks.",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.1-rc.5 <0.2.2-0"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "scripts",
+    "skills",
+    "examples",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md",
+    "THIRD_PARTY_LICENSES"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "notion-research"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

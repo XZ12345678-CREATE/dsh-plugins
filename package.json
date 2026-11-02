@@ -1,0 +1,20 @@
+{
+  "name": "dsh-plugins-monorepo",
+  "version": "0.1.0-preview.2",
+  "private": true,
+  "type": "module",
+  "description": "Four independently installable DSH plugins and an optional self-contained suite.",
+  "license": "MIT",
+  "engines": { "node": "^22.19.0 || >=24.0.0" },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "sync": "node tooling/sync-packages.mjs",
+    "check:sync": "node tooling/sync-packages.mjs --check",
+    "test": "node --test test/*.test.mjs",
+    "test:host": "node test/dsh-contract.mjs",
+    "check:examples": "node packages/dsh-notion-research/scripts/check-evidence.mjs packages/dsh-notion-research/examples/notion-sources.json packages/dsh-notion-research/examples/notion-report.md && node packages/dsh-github-workflows/scripts/inspect-ci.mjs --input packages/dsh-github-workflows/examples/ci-snapshot.json",
+    "pack:plugins": "node tooling/pack.mjs",
+    "test:packed": "node test/packed.mjs"
+  },
+  "devDependencies": { "@deepseek-ai/cordis": "4.0.1-rc.1", "@deepseek-ai/dsh-skill": "0.0.1-rc.1" }
+}

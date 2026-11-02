@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "repo": "example/synthetic-project",
+  "pullRequest": 123,
+  "headSha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "collectedAt": "2026-11-03T00:00:00Z",
+  "checkRuns": [
+    {
+      "id": 1,
+      "name": "unit-tests",
+      "app": { "id": 10, "slug": "github-actions" },
+      "status": "completed",
+      "conclusion": "failure",
+      "html_url": "https://github.com/example/synthetic-project/actions/runs/100",
+      "details_url": "https://github.com/example/synthetic-project/actions/runs/100",
+      "output": { "summary": "Synthetic example: expected 2, received 1." }
+    }
+  ],
+  "statuses": [],
+  "unavailable": [],
+  "logs": [],
+  "headChanged": false
+}
